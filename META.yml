@@ -1,24 +1,41 @@
---- #YAML:1.0
-name:               Config-Micro
-version:            0.01
-abstract:           micro config loader
+---
+abstract: 'micro config loader'
 author:
-    - ytnobody <ytnobody aaaattttt gmail>
-license:            Artistic_2_0
-distribution_type:  module
-configure_requires:
-    ExtUtils::MakeMaker:  0
+  - 'ytnobody, C<< <ytnobody aaaattttt gmail> >>'
 build_requires:
-    Test::More:  0
-requires:
-    File::Basename:  0
-    File::Spec:      0
-    perl:            5.01
-no_index:
-    directory:
-        - t
-        - inc
-generated_by:       ExtUtils::MakeMaker version 6.56
+  Test::More: 0
+configure_requires:
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
+  Module::Build: 0.38
+dynamic_config: 0
+generated_by: 'Minilla/v0.4.2, CPAN::Meta::Converter version 2.130880'
+license: unknown
 meta-spec:
-    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
-    version:  1.4
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Config-Micro
+no_index:
+  directory:
+    - t
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
+provides:
+  Config::Micro:
+    file: lib/Config/Micro.pm
+    version: 0.02
+requires:
+  File::Basename: 0
+  File::Spec: 0
+  perl: 5.01
+resources:
+  bugtracker: https://github.com/ytnobody/Config-Micro/issues
+  homepage: https://github.com/ytnobody/Config-Micro
+  repository: git://github.com/ytnobody/Config-Micro.git
+version: 0.02
+x_contributors:
+  - 'ytnobody <ytnobody@gmail.com>'
